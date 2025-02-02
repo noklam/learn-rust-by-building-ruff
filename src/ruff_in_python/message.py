@@ -57,24 +57,6 @@ class IfTuple(Message):
 
 MessageType = Union[ImportStarUsage, IfTuple]
 
-# # For serialization (if needed):
-# def message_to_dict(message: Message) -> dict:
-#     return {
-#         "type": message.__class__.__name__,
-#         "filename": str(message.filename),
-#         "location": {
-#             "row": message.location.row,
-#             "column": message.location.column
-#         }
-#     }
-
-# def dict_to_message(data: dict) -> MessageType:
-#     cls = globals()[data["type"]]
-#     return cls(
-#         filename=Path(data["filename"]),
-#         location=Location(**data["location"])
-#     )
-
 if __name__ == "__main__":
     from rich import print
     m1 = IfTuple(Path("some_path"),Location(1,2))
