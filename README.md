@@ -3,13 +3,13 @@
 ## The First version of Rust
 These are the main files included in the first version of Rust - that power only two specific rules. While it cannot be used in a meaningful way, it provides an easy way to understand how `ruff` (or generally other linter) works without getting into all the details that are not so important for education.
 
-main.rs
-cache.rs
-check.rs
-lib.rs
-linter.rs
-message.rs
-parser.rs
+- main.rs
+- cache.rs
+- check.rs
+- lib.rs
+- linter.rs
+- message.rs
+- parser.rs
 
 ## Libraries used for 1st version of ruff
 The first-ever version of Ruff used the following Rust packages

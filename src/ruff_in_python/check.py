@@ -2,6 +2,7 @@ from pathlib import Path
 from .message import IfTuple, ImportStarUsage, Location, Message
 import ast
 
+
 def check_statement(path: Path, stmt: ast.stmt) -> list[Message]:
     """recursive function to parse statement"""
     messages = []
