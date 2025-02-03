@@ -12,4 +12,5 @@ ast.Module.__repr__ = pretty_print_ast
 
 def parse_file(path: Path):
     with open(path) as f:
-        return ast.parse(f.read())
+        res = ast.parse(f.read())
+        return res.body

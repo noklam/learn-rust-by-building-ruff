@@ -1,9 +1,7 @@
 # learn-rust-by-building-ruff
 
-## Rebuild with Python
-Components:
-- [ ] Tokenizer (Lexer)
-- [ ] Parser
+## The First version of Rust
+These are the main files included in the first version of Rust - that power only two specific rules. While it cannot be used in a meaningful way, it provides an easy way to understand how `ruff` (or generally other linter) works without getting into all the details that are not so important for education.
 
 main.rs
 cache.rs
@@ -27,16 +25,16 @@ anyhow: Flexible concrete Error type built on std::error::Error
 
 ## Libraries I used for the Python verrsion
 logging: std logging library
-?: parallel computation
 typer: cli argument parsing
-?: serialising
 ast: Python native ast library
 rich: color terminal
 os/pathlib: walking directory
-?: error
 pytest: write simple tests
 
-## Rebuild with Rust
+## Next Step
+- Implement Cache
+- Implement parallel processing
+- Reimplement in Rust
 
 Reference:
 Blog: https://compileralchemy.substack.com/p/ruff-internals-of-a-rust-backed-python

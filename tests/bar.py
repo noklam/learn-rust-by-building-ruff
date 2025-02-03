@@ -1,5 +1,6 @@
 if (1, 2):
-    pass
+    if (3, 4):
+        pass
 
 for _ in range(5):
     if True:
