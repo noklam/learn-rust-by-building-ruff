@@ -73,5 +73,4 @@ def check_ast(path: Path, python_ast: list[ast.stmt]) -> list[Message]:
     messages = []
     for stmt in python_ast:
         messages.extend(check_statement(path, stmt))
-    print("All Messages:", messages)
     return messages

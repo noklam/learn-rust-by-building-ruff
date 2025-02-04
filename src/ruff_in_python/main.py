@@ -4,7 +4,6 @@ import logging
 from rich.logging import RichHandler
 from ruff_in_python.check import check_ast
 from ruff_in_python.parser import parse_file
-from rich import print
 
 logger = logging.getLogger()
 
